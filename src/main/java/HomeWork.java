@@ -72,16 +72,11 @@ public class HomeWork {
 
                         try {
                             plus = Integer.parseInt(arrString[i][j]);
-                        if(((Object)plus).getClass().getName()=="java.lang.Integer") {
                             summ = plus + summ;
-                       } else {
 
-                        }
                         } catch (NumberFormatException e) {
                             throw new MyArrayDataException(i,j);
-
                         }
-
                     }
                 }
 
